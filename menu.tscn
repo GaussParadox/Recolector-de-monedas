@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://ckwy1bt03nbdu"]
+
+[ext_resource type="Script" uid="uid://cpsfa8c241ljh" path="res://menu.gd" id="1_script"]
+
+[node name="Menu" type="Control" unique_id=1153088694]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -129.0
+offset_top = -159.0
+offset_right = -129.0
+offset_bottom = -159.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Opciones" type="VBoxContainer" parent="." unique_id=1685012255]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -60.0
+offset_right = 200.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titulo" type="Label" parent="Opciones" unique_id=275830773]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Recolector de monedas"
+horizontal_alignment = 1
+
+[node name="Jugar" type="Button" parent="Opciones" unique_id=1081511544]
+layout_mode = 2
+text = "Jugar"
+
+[node name="Salir" type="Button" parent="Opciones" unique_id=1156748930]
+layout_mode = 2
+text = "Salir"
+
+[connection signal="pressed" from="Opciones/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Opciones/Salir" to="." method="_on_salir_pressed"]

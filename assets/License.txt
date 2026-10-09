@@ -1,0 +1,4 @@
+PLACEHOLDER ASSETS
+Las imagenes de esta carpeta son marcadores generados para que el proyecto abra y funcione.
+Reemplacelas por las del paquete Pixel Platformer de Kenney (https://kenney.nl/assets/pixel-platformer, licencia CC0)
+con los mismos nombres de archivo (ver Tabla 2 del taller), y copie tambien el License.txt original del paquete.
